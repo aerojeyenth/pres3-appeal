@@ -47,7 +47,9 @@ function setText(
 export async function fillConsultationPdf(data: ConsultationFormData): Promise<Uint8Array> {
   const response = await fetch(PDF_TEMPLATE_URL)
   if (!response.ok) {
-    throw new Error('Could not load the consultation form template.')
+    throw new Error(
+      `Could not load the consultation form template (${response.status} ${response.statusText}).`,
+    )
   }
 
   const templateBytes = await response.arrayBuffer()

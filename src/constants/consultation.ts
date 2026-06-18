@@ -3,7 +3,7 @@ export const CONSULTATION_SUBJECT = 'Registration Public Consultation'
 export const CONSULTATION_DEADLINE = '22 June 2026'
 export const CONSULTATION_OFFICIAL_URL =
   'https://www.medicalcouncil.ie/news-and-publications/press-releases/press-release/items/medical-council-launches-public-consultation-on-proposed-amendment-to-its-registration-rules-to-recognise-plab-2-as-an-exam-alternative.html'
-export const PDF_TEMPLATE_URL = '/original.pdf'
+export const PDF_TEMPLATE_URL = `${import.meta.env.BASE_URL}original.pdf`
 export const PDF_DOWNLOAD_FILENAME = 'registration-consultation-response.pdf'
 export const PDF_SINGLE_LINE_FONT_SIZE = 11
 export const PDF_MULTILINE_FONT_SIZE = 10
