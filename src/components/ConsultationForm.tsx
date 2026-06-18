@@ -20,7 +20,7 @@ type FormErrors = {
 export function ConsultationForm() {
   const [name, setName] = useState('')
   const [interest, setInterest] = useState(DEFAULT_INTEREST)
-  const [isOrganisation, setIsOrganisation] = useState(false)
+  const [isOrganisation] = useState(false)
   const [organisation, setOrganisation] = useState('')
   const [role, setRole] = useState('')
   const [answer21, setAnswer21] = useState(DEFAULT_ANSWER_21)
