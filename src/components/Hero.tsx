@@ -1,6 +1,7 @@
 import {
   CONSULTATION_DEADLINE,
   CONSULTATION_OFFICIAL_URL,
+  MCIR_WEBSITE_URL,
 } from '../constants/consultation'
 
 export function Hero() {
@@ -8,28 +9,28 @@ export function Hero() {
     <header className="hero">
       <div className="hero__content">
         <p className="eyebrow">Medical Council public consultation</p>
-        <p className="hero__deadline">Respond by {CONSULTATION_DEADLINE}</p>
-        <h1>
-          Help international doctors join Ireland&apos;s health service sooner
-        </h1>
+        <p className="hero__deadline">Consultation closed — deadline was {CONSULTATION_DEADLINE}</p>
+        <h1>Thank you to everyone who responded</h1>
         <p className="lead">
-          Back PLAB 2 as a fair route to Irish Medical Council registration.
+          The public consultation on recognising PLAB 2 as an alternative to PRES 3 has
+          now closed. Your support helped international medical graduates make their voices
+          heard.
         </p>
         <p className="hero__official">
+          For official updates on the proposed registration changes, visit the{' '}
+          <a href={MCIR_WEBSITE_URL} target="_blank" rel="noopener noreferrer">
+            Medical Council website
+          </a>
+          . You can also{' '}
           <a
             href={CONSULTATION_OFFICIAL_URL}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Read the official consultation announcement
+            read the original consultation announcement
           </a>
+          .
         </p>
-        <div className="hero__actions">
-          <a href="#consultation-form" className="button button--hero">
-            Start your response
-          </a>
-          <span className="hero__cta-note">Takes about 5 minutes</span>
-        </div>
       </div>
     </header>
   )

@@ -1,17 +1,18 @@
 import { Hero } from './components/Hero'
-import { Appeal } from './components/Appeal'
-import { ConsultationForm } from './components/ConsultationForm'
+import { MCIR_WEBSITE_URL } from './constants/consultation'
 import './App.css'
 
 function App() {
   return (
     <main className="page">
       <Hero />
-      <Appeal />
-      <ConsultationForm />
       <footer className="footer">
-        Review your PDF before emailing. You are responsible for what you submit to the
-        Medical Council.
+        Thank you for standing with internationally qualified doctors. For the latest
+        information on Medical Council registration, visit{' '}
+        <a href={MCIR_WEBSITE_URL} target="_blank" rel="noopener noreferrer">
+          medicalcouncil.ie
+        </a>
+        .
       </footer>
     </main>
   )

@@ -1,6 +1,7 @@
 export const CONSULTATION_EMAIL = 'communications@mcirl.ie'
 export const CONSULTATION_SUBJECT = 'Registration Public Consultation'
 export const CONSULTATION_DEADLINE = '22 June 2026'
+export const MCIR_WEBSITE_URL = 'https://www.medicalcouncil.ie'
 export const CONSULTATION_OFFICIAL_URL =
   'https://www.medicalcouncil.ie/news-and-publications/press-releases/press-release/items/medical-council-launches-public-consultation-on-proposed-amendment-to-its-registration-rules-to-recognise-plab-2-as-an-exam-alternative.html'
 export const PDF_TEMPLATE_URL = `${import.meta.env.BASE_URL}original.pdf`
